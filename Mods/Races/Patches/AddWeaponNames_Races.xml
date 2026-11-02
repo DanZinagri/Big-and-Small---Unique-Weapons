@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance. -->
-  <Operation Class="PatchOperationAttributeAdd">
+  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance.
+       A base that is missing takes our variants with it, instead of leaving them without a parent. -->
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]</xpath>
-    <attribute>Name</attribute>
-    <value>VFEM_Bow_HeavyCrossbow</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]</xpath>
+      <attribute>Name</attribute>
+      <value>VFEM_Bow_HeavyCrossbow</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow_Unique"]</xpath>
+    </nomatch>
   </Operation>
 
 </Patch>

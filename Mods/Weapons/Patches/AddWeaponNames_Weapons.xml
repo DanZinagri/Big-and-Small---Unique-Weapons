@@ -1,47 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance. -->
-  <Operation Class="PatchOperationAttributeAdd">
+  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance.
+       A base that is missing takes our variants with it, instead of leaving them without a parent. -->
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_GiantMedievalHammer"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_GiantMedievalHammer</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_GiantMedievalHammer"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_GiantMedievalHammer</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_GiantMedievalHammer_Unique" or defName="BS_GiantMedievalHammerBladelink"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_GiantScythe"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_GiantScythe</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_GiantScythe"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_GiantScythe</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_GiantScythe_Unique" or defName="BS_GiantScytheBladelink"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_OniClub"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_OniClub</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_OniClub"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_OniClub</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_OniClub_Unique" or defName="BS_OniClubBladelink"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_GiantSalvageClub"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_GiantSalvageClub</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_GiantSalvageClub"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_GiantSalvageClub</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_GiantSalvageClub_Unique" or defName="BS_GiantSalvageClubBladelink"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_GiantShard"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_GiantShard</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_GiantShard"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_GiantShard</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_GiantShard_Unique" or defName="BS_GiantShardBladelink"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_VaeSuis"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_VaeSuis</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_VaeSuis"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_VaeSuis</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_VaeSuis_Unique"]</xpath>
+    </nomatch>
   </Operation>
 
-  <Operation Class="PatchOperationAttributeAdd">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="BS_Skarstind"]</xpath>
-    <attribute>Name</attribute>
-    <value>BS_Skarstind</value>
+    <match Class="PatchOperationAttributeAdd">
+      <xpath>Defs/ThingDef[defName="BS_Skarstind"]</xpath>
+      <attribute>Name</attribute>
+      <value>BS_Skarstind</value>
+    </match>
+    <nomatch Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="BS_Skarstind_Unique"]</xpath>
+    </nomatch>
   </Operation>
 
 </Patch>
