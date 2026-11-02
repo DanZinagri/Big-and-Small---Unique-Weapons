@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance. -->
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunSword"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_JotunSword</value>
+  </Operation>
+
+</Patch>

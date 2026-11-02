@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="VFEM_Bow_HeavyCrossbow">
+    <defName>VFEM_Bow_HeavyCrossbow_Unique</defName>
+    <label>unique heavy crossbow</label>
+    <description>A heavy crossbow with customized parts.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>VFEM_Bow_HeavyCrossbow</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Bow</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>crossbow</li>
+          <li>arbalest</li>
+          <li>bolt thrower</li>
+          <li>prod</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BS_OgreClub">
+    <defName>BS_OgreClub_Unique</defName>
+    <label>unique giant club</label>
+    <description>A giant club with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_OgreClub</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Blunt</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>club</li>
+          <li>cudgel</li>
+          <li>bludgeon</li>
+          <li>head</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_OgreClub" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>BS_OgreClubBladelink</defName>
+    <label>persona giant club</label>
+    <description>A giant club carrying a persona core. It bonds with its wielder and grows with them.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>3</relicChance>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags Inherit="False">
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <descriptionHyperlinks>
+      <ThingDef>BS_OgreClub</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GiantHammer">
+    <defName>BS_GiantHammer_Unique</defName>
+    <label>unique giant primitive hammer</label>
+    <description>A giant primitive hammer with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_GiantHammer</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Blunt</li>
+          <li>UMW_Pointed</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>hammer</li>
+          <li>maul</li>
+          <li>stone</li>
+          <li>head</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GiantHammer" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>BS_GiantHammerBladelink</defName>
+    <label>persona giant primitive hammer</label>
+    <description>A giant primitive hammer carrying a persona core. It bonds with its wielder and grows with them.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>3</relicChance>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags Inherit="False">
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <descriptionHyperlinks>
+      <ThingDef>BS_GiantHammer</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_JotunHammer">
+    <defName>BS_JotunHammer_Unique</defName>
+    <label>unique giant warhammer</label>
+    <description>A giant warhammer with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunHammer</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Blunt</li>
+          <li>UMW_Heavy</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>warhammer</li>
+          <li>maul</li>
+          <li>breaker</li>
+          <li>head</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_JotunHammer" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>BS_JotunHammerBladelink</defName>
+    <label>persona giant warhammer</label>
+    <description>A giant warhammer carrying a persona core. It bonds with its wielder and grows with them.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>3</relicChance>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags Inherit="False">
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunHammer</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_SurtrSword">
+    <defName>BS_SurtrSword_Unique</defName>
+    <label>unique Sword of Surtr</label>
+    <description>A Sword of Surtr with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_SurtrSword</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Bladed</li>
+          <li>UMW_Pointed</li>
+          <li>UMW_Heavy</li>
+          <li>UMW_Guarded</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>sun blade</li>
+          <li>blade</li>
+          <li>pyre</li>
+          <li>edge</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_SkrymirHammer">
+    <defName>BS_SkrymirHammer_Unique</defName>
+    <label>unique Skrýmir's Mallet</label>
+    <description>A Skrýmir's Mallet with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_SkrymirHammer</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Blunt</li>
+          <li>UMW_Heavy</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>mallet</li>
+          <li>frost</li>
+          <li>breaker</li>
+          <li>head</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_GiantPrimitiveBow">
+    <defName>BS_GiantPrimitiveBow_Unique</defName>
+    <label>unique giant bow</label>
+    <description>A giant bow with customized parts.</description>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_GiantPrimitiveBow</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>Bow</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>bow</li>
+          <li>greatbow</li>
+          <li>limb</li>
+          <li>string</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

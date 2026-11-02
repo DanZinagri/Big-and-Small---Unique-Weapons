@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BS_JotunSword">
+    <defName>BS_JotunSword_Unique</defName>
+    <label>unique giant sword</label>
+    <description>A giant sword with customized parts.</description>
+    <thingClass>UniqueMeleeWeapons.UniqueMeleeWeapon</thingClass>
+    <graphicData>
+      <texPath>Item/BS_GiantNordicSword</texPath>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+      <li>UMW_UniqueMelee</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunSword</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li>
+        <compClass>BigSmallUniqueWeapons.CompKeepBaseColor</compClass>
+      </li>
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>UMW_Melee</li>
+          <li>UMW_Bladed</li>
+          <li>UMW_Pointed</li>
+          <li>UMW_Heavy</li>
+          <li>UMW_Guarded</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>greatsword</li>
+          <li>blade</li>
+          <li>edge</li>
+          <li>giantslayer</li>
+        </namerLabels>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BS_JotunSword" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>BS_JotunSwordBladelink</defName>
+    <label>persona giant sword</label>
+    <description>A giant sword carrying a persona core. It bonds with its wielder and grows with them.</description>
+    <graphicData>
+      <texPath>Item/BS_GiantNordicSword</texPath>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <tradeNeverStack>true</tradeNeverStack>
+    <relicChance>3</relicChance>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <notifyMapRemoved>true</notifyMapRemoved>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsMeleeBladelink</li>
+    </thingCategories>
+    <thingSetMakerTags Inherit="False">
+      <li>WeaponBladelink</li>
+    </thingSetMakerTags>
+    <descriptionHyperlinks>
+      <ThingDef>BS_JotunSword</ThingDef>
+    </descriptionHyperlinks>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BladelinkWeapon">
+        <biocodeOnEquip>true</biocodeOnEquip>
+      </li>
+      <li Class="CompProperties_GeneratedName">
+        <nameMaker>NamerWeaponBladelink</nameMaker>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

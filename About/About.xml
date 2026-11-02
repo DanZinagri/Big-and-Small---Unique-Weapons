@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Big and Small - Unique Weapons</name>
+	<author>DanZinagri</author>
+	<packageId>DanZinagri.BigSmall.UniqueWeapons</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+		<li>1.7</li>
+	</supportedVersions>
+	<description>Unique and persona versions of Big and Small weapons.</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Odyssey</packageId>
+			<displayName>Odyssey</displayName>
+		</li>
+		<li>
+			<packageId>RedMattis.BigSmall.Core</packageId>
+			<displayName>Big and Small - Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>shunter.uniquemeleeweapons</packageId>
+			<displayName>Unique Melee Weapons</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3776637622</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Odyssey</li>
+		<li>RedMattis.BigSmall.Core</li>
+		<li>RedMattis.BigSmall</li>
+		<li>RedMattis.BigWeapons</li>
+		<li>shunter.uniquemeleeweapons</li>
+		<li>shunter.uniqueweaponsunbound</li>
+		<li>shunter.personaweaponsunbound</li>
+	</loadAfter>
+</ModMetaData>

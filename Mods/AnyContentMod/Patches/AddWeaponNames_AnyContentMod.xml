@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance. -->
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_OgreClub"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_OgreClub</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantHammer"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantHammer</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunHammer"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_JotunHammer</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_SurtrSword"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_SurtrSword</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_SkrymirHammer"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_SkrymirHammer</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantPrimitiveBow"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantPrimitiveBow</value>
+  </Operation>
+
+</Patch>

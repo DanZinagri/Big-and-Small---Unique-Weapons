@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- ParentName resolves against Name=, which these weapons do not have. Patches run before inheritance. -->
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantMedievalHammer"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantMedievalHammer</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantScythe"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantScythe</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_OniClub"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_OniClub</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantSalvageClub"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantSalvageClub</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantShard"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_GiantShard</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_VaeSuis"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_VaeSuis</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAttributeAdd">
+    <xpath>Defs/ThingDef[defName="BS_Skarstind"]</xpath>
+    <attribute>Name</attribute>
+    <value>BS_Skarstind</value>
+  </Operation>
+
+</Patch>
